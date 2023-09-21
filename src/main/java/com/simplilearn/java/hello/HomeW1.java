@@ -10,6 +10,9 @@ public class HomeW1 {
 		// TODO Auto-generated method stub
 
 		System.out.println("hello from eclipse");
+		System.out.println("2nd hello from eclipse");
+
+		
 		
 	}
 
