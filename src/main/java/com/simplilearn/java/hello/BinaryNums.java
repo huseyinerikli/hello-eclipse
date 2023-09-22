@@ -31,6 +31,9 @@ import java.util.*;
 	        head.next.next.next.next = new ListNode(1);
 	        head.next.next.next.next.next = new ListNode(1);
 	        int decimalValue = binaryToDecimal(head);
+	        
+	        System.out.println("Binary Value: [010011]");
+
 	        System.out.println("Decimal Value: " + decimalValue); // Output: 5
 	    }    
 }
