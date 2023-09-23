@@ -23,6 +23,8 @@ import java.util.*;
 	        }
 	        return decimalValue;
 	    }
+	    
+	    
 	public static void main(String[] args) {		
 		  ListNode head = new ListNode(0);
 	        head.next = new ListNode(1);
@@ -34,6 +36,6 @@ import java.util.*;
 	        
 	        System.out.println("Binary Value: [010011]");
 
-	        System.out.println("Decimal Value: " + decimalValue); // Output: 5
+	        System.out.println("Decimal Value: " + decimalValue); 
 	    }    
 }

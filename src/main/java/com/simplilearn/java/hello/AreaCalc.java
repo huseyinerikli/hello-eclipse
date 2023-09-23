@@ -1,39 +1,32 @@
 package com.simplilearn.java.hello;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class AreaCalc {
-	
-	// returns the area of a circle
+public class AreaCalc {	
 	public static double area_circle( int radius ) {
 		return (double) Math.PI * (radius * radius);
-		
 	}
-	// returns the area of a rectangle
+	
 	public static int area_rectangle( int length, int width ) {
 		return length * width;
-	} 
+	} 	
 	
-	// returns the area of a square
 	public static int area_square( int side ){
 		return side * side;
 	}   
 	
-	// returns the area of a triangle
 	public static double area_triangle( int base, int height ){
 		return (base * height)/2;
 	}   
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub		
 		
 		 Scanner sc= new Scanner(System.in);
-		 System.out.println("1"+ ")" + "Triangle");
-		 System.out.println("2"+ ")" + "Rectangle");
-		 System.out.println("3"+ ")" + "Square");
-		 System.out.println("4"+ ")" + "Circle");
-		 System.out.println("5"+ ")" + "Quit");
+		 System.out.println("1. Triangle");
+		 System.out.println("2. Rectangle");
+		 System.out.println("3. Square");
+		 System.out.println("4. Circle");
+		 System.out.println("5. Quit");
 		 
 	        System.out.print("Which shape?: ");
 	        int shapeNum=sc.nextInt();     
@@ -77,9 +70,6 @@ public class AreaCalc {
 		    
 		  default:
               System.out.println("Invalid choice. Please try again.");
-		}	
-		
-		
+		}		
 	}
-
 }
