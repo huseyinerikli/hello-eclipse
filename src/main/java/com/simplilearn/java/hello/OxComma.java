@@ -32,10 +32,10 @@ public class OxComma {
 
 		List<String> st = new ArrayList<String>();
 
-		st.add("Afdf");
-		st.add("Bdfdf");
-		st.add("Cdfdf");
-		st.add("Ddfd");
+		st.add("A");
+		st.add("B");
+		st.add("C");
+		st.add("D");
 		st.add("E");
 
 		System.out.println("The list is: " + OxfordComma.printOxComma(st));

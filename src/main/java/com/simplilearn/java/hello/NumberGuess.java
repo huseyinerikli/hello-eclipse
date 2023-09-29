@@ -1,18 +1,16 @@
 package com.simplilearn.java.hello;
 
-
 import java.util.Random;
 import java.util.Scanner;
 
 public class NumberGuess {	
 	
-	public static void boolean checkGuess(int guess , int rand ) {
+	public static boolean checkGuess(int guess , int rand ) {
 		  if (guess == rand) {
-	           System.out.println("That's right! My secret number was " + rand + "!");
+	          return true;
 	        } else {
-	            System.out.println("Sorry, but I was really thinking of " + rand + ".");
-	        }
-		
+	        	return false;
+	        }		
 	}
 
 	public static void main(String[] args) {
@@ -25,11 +23,12 @@ public class NumberGuess {
         int userGuess = scanner.nextInt();
         System.out.println("Your guess: " + userGuess);
         
-        NumberGuess.checkGuess(userGuess, randomNumber);
-        
-        
+        if(NumberGuess.checkGuess(userGuess, randomNumber)) {
+        	System.out.println("That's right! My secret number was " + randomNumber + "!");
+        }else {
+        	System.out.println("Sorry, but I was really thinking of " + randomNumber + ".");
+        }        
 	}
-
 }
 
 
