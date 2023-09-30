@@ -4,24 +4,29 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class AreaCalc {
-	public static double area_circle(int radius) {
+	public double area_circle(int radius) {
 		return (double) Math.PI * (radius * radius);
 	}
 
-	public static int area_rectangle(int length, int width) {
+	public int area_rectangle(int length, int width) {
 		return length * width;
 	}
 
-	public static int area_square(int side) {
+	public int area_square(int side) {
 		return side * side;
 	}
 
-	public static double area_triangle(int base, int height) {
+	public double area_triangle(int base, int height) {
 		return (base * height) / 2;
 	}
 
 	public static void main(String[] args) {
 
+		AreaCalc resTri = new AreaCalc();
+		AreaCalc resRect = new AreaCalc();
+		AreaCalc resSqr = new AreaCalc();
+		AreaCalc resCirc = new AreaCalc();
+				
 		System.out.println("1. Triangle");
 		System.out.println("2. Rectangle");
 		System.out.println("3. Square");
@@ -38,7 +43,7 @@ public class AreaCalc {
 			int base = sc.nextInt();
 			System.out.print("Height: ");
 			int height = sc.nextInt();
-			double areaOfTriangle = AreaCalc.area_triangle(base, height);
+			double areaOfTriangle = resTri.area_triangle(base, height);
 			System.out.println("The area is: " + areaOfTriangle);
 			break;
 
@@ -47,21 +52,21 @@ public class AreaCalc {
 			int lenght = sc.nextInt();
 			System.out.print("Width: ");
 			int width = sc.nextInt();
-			int areaOfRectangle = AreaCalc.area_rectangle(lenght, width);
+			int areaOfRectangle = resRect.area_rectangle(lenght, width);
 			System.out.println("The area is: " + areaOfRectangle);
 			break;
 
 		case 3:
 			System.out.print("Side length: ");
 			int side = sc.nextInt();
-			int areaOfSquare = AreaCalc.area_square(side);
+			int areaOfSquare = resSqr.area_square(side);
 			System.out.println("The area is: " + areaOfSquare);
 			break;
 
 		case 4:
 			System.out.print("Radius: ");
 			int radius = sc.nextInt();			
-			double areaOfCircle = AreaCalc.area_circle(radius);
+			double areaOfCircle = resCirc.area_circle(radius);
 			System.out.println("The area is: " + areaOfCircle);
 			break;
 

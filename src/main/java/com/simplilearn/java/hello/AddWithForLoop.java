@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class AddWithForLoop {
 
-	public static void addNumbers(int num) {
+	public void addNumbers(int num) {
 		int total = 0;
 		 for (int i = 1; i <= num; i++) {
 	        	System.out.print(i + " ");
@@ -20,7 +20,8 @@ public class AddWithForLoop {
 	        int input = scanner.nextInt();	     	        
 	        System.out.println(" ");
 	        
-	        AddWithForLoop.addNumbers(input);        
+	        AddWithForLoop res = new AddWithForLoop();
+	        res.addNumbers(input);        
 
 	    }
 	}

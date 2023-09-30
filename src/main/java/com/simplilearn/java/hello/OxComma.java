@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class OxComma {
 
-	public static String printOxComma(List<String> list) {
+	public  String printOxComma(List<String> list) {
 
 		int size = list.size();
 		if (list.isEmpty()) {
@@ -38,7 +38,9 @@ public class OxComma {
 		st.add("D");
 		st.add("E");
 
-		System.out.println("The list is: " + OxfordComma.printOxComma(st));
+		OxfordComma res = new OxfordComma();
+		
+		System.out.println("The list is: " + res.printOxComma(st));
 //		String res = OxfordComma.printOxComma(st);
 //		System.out.println("The list is: " + res);
 	}

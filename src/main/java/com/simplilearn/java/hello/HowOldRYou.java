@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class HowOldRYou {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		        Scanner scanner = new Scanner(System.in);
 		        System.out.print("Enter your birth year: ");
 		        int bYear = scanner.nextInt();
-		        int age = 0;
+		        int age = 1;
 		        
 		        if (bYear < 0) {
 					System.out.println("invalid age input. Age cannot be negative.");
@@ -19,8 +18,7 @@ public class HowOldRYou {
 		        age = 2023 - bYear;		        		        
 		        System.out.println("You are " + age 
 		        		+ " years old if your birthday passed in the current year. ");
-		        }
-		        
+		        }		        
 		        
 		        if (0 < age  && age< 16) {
 		            System.out.println("You can't drive.");

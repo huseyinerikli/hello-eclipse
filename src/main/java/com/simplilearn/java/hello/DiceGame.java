@@ -2,11 +2,12 @@ package com.simplilearn.java.hello;
 import java.util.Random;
 public class DiceGame {
 		
-	public static void rollDice() {		 
+	public void rollDice() {		 
 		Random random = new Random();	    
 	    int first = random.nextInt(6) + 1;
 	    int second = random.nextInt(6) + 1;        
-	    int total = first + second;		    
+	    int total = first + second;	
+	    
 	    System.out.println("HERE COMES THE DICE!");
         System.out.println("Roll #1: " + first);
         System.out.println("Roll #2: " + second);
@@ -15,7 +16,9 @@ public class DiceGame {
 	
 	public static void main(String[] args) {
        
-		DiceGame.rollDice();       
+		DiceGame res = new DiceGame();
+		
+		res.rollDice();       
 	}
 }
 

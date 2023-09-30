@@ -5,7 +5,14 @@ import java.util.Scanner;
 
 public class NumberGuess {	
 	
-	public static boolean checkGuess(int guess , int rand ) {
+	private int rand;
+	
+	public NumberGuess(int rand){
+		this.rand = rand;
+		
+	}
+	
+	public boolean checkGuess(int guess) {
 		  if (guess == rand) {
 	          return true;
 	        } else {
@@ -23,11 +30,14 @@ public class NumberGuess {
         int userGuess = scanner.nextInt();
         System.out.println("Your guess: " + userGuess);
         
-        if(NumberGuess.checkGuess(userGuess, randomNumber)) {
+        NumberGuess res= new NumberGuess(randomNumber); 
+        
+        if(res.checkGuess(userGuess)) {
         	System.out.println("That's right! My secret number was " + randomNumber + "!");
         }else {
         	System.out.println("Sorry, but I was really thinking of " + randomNumber + ".");
-        }        
+        } 
+        scanner.close();
 	}
 }
 

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class NaturalNumbers {
 
-	public void printNatNumbers(int numberOfNatNumbers) {
+	private void printNatNumbers(int numberOfNatNumbers) {
 		int sum = 0;
 		for (int i = 1; i <= numberOfNatNumbers; i++) {
 			System.out.println(i);
